@@ -1,0 +1,11 @@
+name: Simple CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Echo a string
+      run: echo "Work Flow successful!"
